@@ -13,8 +13,8 @@ class ProductPage extends StatelessWidget {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('Are You Sure...?'),
-            content: Text('Action cannot be undone'),
+            title: Text('Are you sure?'),
+            content: Text('This action cannot be undone!'),
             actions: <Widget>[
               FlatButton(
                 child: Text('DISCARD'),
@@ -28,7 +28,7 @@ class ProductPage extends StatelessWidget {
                   Navigator.pop(context);
                   Navigator.pop(context, true);
                 },
-              )
+              ),
             ],
           );
         });
